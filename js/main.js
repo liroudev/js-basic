@@ -1,21 +1,53 @@
-function soma(n1,n2){
-    return n1 + n2;
+function funcaoChange(elemento){
+    alert(elemento.value);
 }
 
-alert(soma(5,10));
-
-function validaIdade(idade){
-    var validar;
-    if(idade >=18){
-        validar = true;
-    }else {
-        validar = false;
-    }
-    return validar;
+function load(){
+    alert("Página carregada");
 }
 
-var idade = prompt("Informe a sua idade");
-alert(validaIdade(idade));
+function voltarTexto(){
+    document.getElementById("passar-mouse-em-cima").innerHTML = "Passe o mouse aqui!";
+}
+
+function mudarTexto(){
+    //alert("Opa ... você passou o mouse em mim!");
+    document.getElementById("passar-mouse-em-cima").innerHTML = "Mudei porque você passou o mouse";
+}
+
+function redirecionar(){
+    window.open("https://www.google.com.br"); // abre em uma nova guia
+    //window.location.href = "https://www.google.com.br"; // abre na guia atual
+}
+
+function btnCliqueAquiEvento(){
+    document.getElementById("agradecimento").innerHTML="Obrigado por clicar!";
+}
+
+
+// function btnCliqueAquiEvento(){
+//     alert("Você me clicou!");
+// }
+
+
+// function soma(n1,n2){
+//     return n1 + n2;
+// }
+
+// alert(soma(5,10));
+
+// function validaIdade(idade){
+//     var validar;
+//     if(idade >=18){
+//         validar = true;
+//     }else {
+//         validar = false;
+//     }
+//     return validar;
+// }
+
+// var idade = prompt("Informe a sua idade");
+// alert(validaIdade(idade));
 
 
 // var d = new Date();

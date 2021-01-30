@@ -6,7 +6,16 @@
     <title>My Page</title>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body>
+<body onload="load()">
     <h1>Minha página</h1>
+    <button type="button" onclick="btnCliqueAquiEvento()">Clique aqui</button>
+    <button class="button" onclick="redirecionar()">Google</button>
+    <p id="agradecimento"></p>
+    <p id="passar-mouse-em-cima" onmousemove="mudarTexto()" onmouseout="voltarTexto()">Passe o mouse aqui!</p>
+    <select name="Teste" id="selecao" onchange="funcaoChange(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
 </body>
 </html>
